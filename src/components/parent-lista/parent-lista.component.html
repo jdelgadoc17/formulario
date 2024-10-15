@@ -1,0 +1,12 @@
+<app-child-form (formEnviado)="recibirInfo($event)"  > </app-child-form>
+
+<div>
+    <h2>Usuarios registrados: {{ lista.length }}</h2>
+
+    <ul *ngFor="let user of lista" class="cadaUser">
+        <h3>Usuario: {{ lista.length }}</h3>
+        <li>{{ user.username }}</li>
+        <li>{{ user.email }}</li>
+    </ul>
+</div>
+
